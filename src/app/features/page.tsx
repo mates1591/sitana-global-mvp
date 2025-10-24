@@ -30,7 +30,7 @@ export default function FeaturesPage() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative w-full py-20 md:py-32 bg-gradient-to-br from-[#2d7a6e]/10 to-[#4a9d8f]/5">
+        <section className="relative w-full py-20 md:py-32 bg-gradient-to-br from-[#233161]/10 to-[#e9b95c]/5">
           <div className="container px-4 md:px-8 mx-auto max-w-7xl">
             <div className="flex flex-col items-center space-y-8 text-center">
               <div className="space-y-6 max-w-4xl">
@@ -61,8 +61,8 @@ export default function FeaturesPage() {
               <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 w-full max-w-6xl">
                 <Card className="border-border">
                   <CardHeader>
-                    <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#2d7a6e]/10 mb-3">
-                      <Languages className="w-6 h-6 text-[#2d7a6e]" />
+                    <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#233161]/10 mb-3">
+                      <Languages className="w-6 h-6 text-[#233161]" />
                     </div>
                     <CardTitle className="text-foreground">Multilingual Platform</CardTitle>
                     <CardDescription>
@@ -74,8 +74,8 @@ export default function FeaturesPage() {
                 </Card>
                 <Card className="border-border">
                   <CardHeader>
-                    <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#2d7a6e]/10 mb-3">
-                      <Activity className="w-6 h-6 text-[#2d7a6e]" />
+                    <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#233161]/10 mb-3">
+                      <Activity className="w-6 h-6 text-[#233161]" />
                     </div>
                     <CardTitle className="text-foreground">Smart Triage System</CardTitle>
                     <CardDescription>
@@ -87,8 +87,8 @@ export default function FeaturesPage() {
                 </Card>
                 <Card className="border-border">
                   <CardHeader>
-                    <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#2d7a6e]/10 mb-3">
-                      <Video className="w-6 h-6 text-[#2d7a6e]" />
+                    <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#233161]/10 mb-3">
+                      <Video className="w-6 h-6 text-[#233161]" />
                     </div>
                     <CardTitle className="text-foreground">Secure Video Consultations</CardTitle>
                     <CardDescription>
@@ -100,8 +100,8 @@ export default function FeaturesPage() {
                 </Card>
                 <Card className="border-border">
                   <CardHeader>
-                    <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#2d7a6e]/10 mb-3">
-                      <FileText className="w-6 h-6 text-[#2d7a6e]" />
+                    <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#233161]/10 mb-3">
+                      <FileText className="w-6 h-6 text-[#233161]" />
                     </div>
                     <CardTitle className="text-foreground">Digital Clinic Letters</CardTitle>
                     <CardDescription>
@@ -113,23 +113,23 @@ export default function FeaturesPage() {
                 </Card>
                 <Card className="border-border">
                   <CardHeader>
-                    <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#2d7a6e]/10 mb-3">
-                      <Lock className="w-6 h-6 text-[#2d7a6e]" />
+                    <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#233161]/10 mb-3">
+                      <Lock className="w-6 h-6 text-[#233161]" />
                     </div>
                     <CardTitle className="text-foreground">Privacy-First Design</CardTitle>
                     <CardDescription>
                       Every consultation, document, and data exchange happens within
-                      clear privacy guardrails and medical compliance standards. GDPR
-                      and HIPAA compliant architecture.
+                      clear privacy guardrails and medical compliance standards. Controls 
+                      and workflows are designed to support GDPR/HIPAA compliance.
                     </CardDescription>
                   </CardHeader>
                 </Card>
                 <Card className="border-border">
                   <CardHeader>
-                    <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#2d7a6e]/10 mb-3">
-                      <Users className="w-6 h-6 text-[#2d7a6e]" />
+                    <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#233161]/10 mb-3">
+                      <Users className="w-6 h-6 text-[#233161]" />
                     </div>
-                    <CardTitle className="text-foreground">Postcard Second Opinions</CardTitle>
+                    <CardTitle className="text-foreground">International Second Opinions</CardTitle>
                     <CardDescription>
                       Get expert second opinions on de-identified medical data,
                       protecting patient identity while ensuring quality review from
@@ -156,8 +156,8 @@ export default function FeaturesPage() {
               </div>
               <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 w-full max-w-6xl">
                 <div className="flex flex-col items-start space-y-4 p-6 rounded-xl bg-white border border-border">
-                  <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#2d7a6e]/10">
-                    <CalendarClock className="w-6 h-6 text-[#2d7a6e]" />
+                  <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#233161]/10">
+                    <CalendarClock className="w-6 h-6 text-[#233161]" />
                   </div>
                   <h3 className="text-xl font-semibold text-foreground">24/7 Booking</h3>
                   <p className="text-muted-foreground">
@@ -166,8 +166,8 @@ export default function FeaturesPage() {
                   </p>
                 </div>
                 <div className="flex flex-col items-start space-y-4 p-6 rounded-xl bg-white border border-border">
-                  <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#2d7a6e]/10">
-                    <HeartPulse className="w-6 h-6 text-[#2d7a6e]" />
+                  <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#233161]/10">
+                    <HeartPulse className="w-6 h-6 text-[#233161]" />
                   </div>
                   <h3 className="text-xl font-semibold text-foreground">Health Records</h3>
                   <p className="text-muted-foreground">
@@ -176,8 +176,8 @@ export default function FeaturesPage() {
                   </p>
                 </div>
                 <div className="flex flex-col items-start space-y-4 p-6 rounded-xl bg-white border border-border">
-                  <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#2d7a6e]/10">
-                    <Smartphone className="w-6 h-6 text-[#2d7a6e]" />
+                  <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#233161]/10">
+                    <Smartphone className="w-6 h-6 text-[#233161]" />
                   </div>
                   <h3 className="text-xl font-semibold text-foreground">Mobile Access</h3>
                   <p className="text-muted-foreground">
@@ -204,8 +204,8 @@ export default function FeaturesPage() {
               </div>
               <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 w-full max-w-6xl">
                 <div className="flex flex-col items-start space-y-4 p-6 rounded-xl bg-[#f8f9fa] border border-border">
-                  <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#2d7a6e]/10">
-                    <Clock className="w-6 h-6 text-[#2d7a6e]" />
+                  <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#233161]/10">
+                    <Clock className="w-6 h-6 text-[#233161]" />
                   </div>
                   <h3 className="text-xl font-semibold text-foreground">Smart Scheduling</h3>
                   <p className="text-muted-foreground">
@@ -214,8 +214,8 @@ export default function FeaturesPage() {
                   </p>
                 </div>
                 <div className="flex flex-col items-start space-y-4 p-6 rounded-xl bg-[#f8f9fa] border border-border">
-                  <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#2d7a6e]/10">
-                    <Shield className="w-6 h-6 text-[#2d7a6e]" />
+                  <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#233161]/10">
+                    <Shield className="w-6 h-6 text-[#233161]" />
                   </div>
                   <h3 className="text-xl font-semibold text-foreground">Compliance Suite</h3>
                   <p className="text-muted-foreground">
@@ -224,8 +224,8 @@ export default function FeaturesPage() {
                   </p>
                 </div>
                 <div className="flex flex-col items-start space-y-4 p-6 rounded-xl bg-[#f8f9fa] border border-border">
-                  <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#2d7a6e]/10">
-                    <Globe className="w-6 h-6 text-[#2d7a6e]" />
+                  <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#233161]/10">
+                    <Globe className="w-6 h-6 text-[#233161]" />
                   </div>
                   <h3 className="text-xl font-semibold text-foreground">Global Reach</h3>
                   <p className="text-muted-foreground">
@@ -241,7 +241,7 @@ export default function FeaturesPage() {
         {/* CTA Section */}
         <section className="w-full py-16 md:py-24 bg-[#f8f9fa]">
           <div className="container px-4 md:px-8 mx-auto max-w-7xl">
-            <div className="flex flex-col items-center space-y-8 text-center bg-gradient-to-br from-[#2d7a6e]/10 to-[#4a9d8f]/5 rounded-3xl p-12 md:p-16 border border-[#2d7a6e]/20">
+            <div className="flex flex-col items-center space-y-8 text-center bg-gradient-to-br from-[#233161]/10 to-[#e9b95c]/5 rounded-3xl p-12 md:p-16 border border-[#233161]/20">
               <div className="space-y-4 max-w-3xl">
                 <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-foreground">
                   Ready to Get Started?
@@ -251,11 +251,11 @@ export default function FeaturesPage() {
                 </p>
               </div>
               <div className="flex flex-col gap-4 sm:flex-row sm:gap-4">
-                <Button asChild size="lg" className="bg-[#2d7a6e] hover:bg-[#25675d] text-white rounded-lg px-8">
-                  <Link href="/sign-up?as=patient">Start as Patient</Link>
+                <Button asChild size="lg" className="bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg px-8">
+                  <Link href="/sign-up?as=patient">Join the waitlist</Link>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="rounded-lg px-8 border-2">
-                  <Link href="/sign-up?as=doctor">Join as Doctor</Link>
+                  <Link href="/sign-up?as=doctor">Apply as a provider</Link>
                 </Button>
               </div>
             </div>

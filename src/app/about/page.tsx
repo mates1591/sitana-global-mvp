@@ -17,7 +17,7 @@ export default function AboutPage() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative w-full py-20 md:py-32 bg-gradient-to-br from-[#2d7a6e]/10 to-[#4a9d8f]/5">
+        <section className="relative w-full py-20 md:py-32 bg-gradient-to-br from-[#233161]/10 to-[#e9b95c]/5">
           <div className="container px-4 md:px-8 mx-auto max-w-7xl">
             <div className="flex flex-col items-center space-y-8 text-center">
               <div className="space-y-6 max-w-4xl">
@@ -60,8 +60,8 @@ export default function AboutPage() {
               <div className="grid gap-6">
                 <Card className="border-border">
                   <CardHeader>
-                    <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#2d7a6e]/10 mb-3">
-                      <Globe className="w-6 h-6 text-[#2d7a6e]" />
+                    <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#233161]/10 mb-3">
+                      <Globe className="w-6 h-6 text-[#233161]" />
                     </div>
                     <CardTitle className="text-foreground">Global Access</CardTitle>
                     <CardDescription>
@@ -72,8 +72,8 @@ export default function AboutPage() {
                 </Card>
                 <Card className="border-border">
                   <CardHeader>
-                    <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#2d7a6e]/10 mb-3">
-                      <Shield className="w-6 h-6 text-[#2d7a6e]" />
+                    <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#233161]/10 mb-3">
+                      <Shield className="w-6 h-6 text-[#233161]" />
                     </div>
                     <CardTitle className="text-foreground">Privacy First</CardTitle>
                     <CardDescription>
@@ -84,8 +84,8 @@ export default function AboutPage() {
                 </Card>
                 <Card className="border-border">
                   <CardHeader>
-                    <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#2d7a6e]/10 mb-3">
-                      <Heart className="w-6 h-6 text-[#2d7a6e]" />
+                    <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#233161]/10 mb-3">
+                      <Heart className="w-6 h-6 text-[#233161]" />
                     </div>
                     <CardTitle className="text-foreground">Patient-Centered</CardTitle>
                     <CardDescription>
@@ -113,8 +113,8 @@ export default function AboutPage() {
               </div>
               <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 w-full max-w-6xl">
                 <div className="flex flex-col items-center text-center space-y-4 p-6 rounded-xl bg-white border border-border">
-                  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-[#2d7a6e]/10">
-                    <Shield className="w-8 h-8 text-[#2d7a6e]" />
+                  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-[#233161]/10">
+                    <Shield className="w-8 h-8 text-[#233161]" />
                   </div>
                   <h3 className="text-xl font-semibold text-foreground">Privacy & Security</h3>
                   <p className="text-muted-foreground">
@@ -123,8 +123,8 @@ export default function AboutPage() {
                   </p>
                 </div>
                 <div className="flex flex-col items-center text-center space-y-4 p-6 rounded-xl bg-white border border-border">
-                  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-[#2d7a6e]/10">
-                    <Users className="w-8 h-8 text-[#2d7a6e]" />
+                  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-[#233161]/10">
+                    <Users className="w-8 h-8 text-[#233161]" />
                   </div>
                   <h3 className="text-xl font-semibold text-foreground">Inclusivity</h3>
                   <p className="text-muted-foreground">
@@ -133,8 +133,8 @@ export default function AboutPage() {
                   </p>
                 </div>
                 <div className="flex flex-col items-center text-center space-y-4 p-6 rounded-xl bg-white border border-border">
-                  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-[#2d7a6e]/10">
-                    <Target className="w-8 h-8 text-[#2d7a6e]" />
+                  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-[#233161]/10">
+                    <Target className="w-8 h-8 text-[#233161]" />
                   </div>
                   <h3 className="text-xl font-semibold text-foreground">Quality Care</h3>
                   <p className="text-muted-foreground">
@@ -143,8 +143,8 @@ export default function AboutPage() {
                   </p>
                 </div>
                 <div className="flex flex-col items-center text-center space-y-4 p-6 rounded-xl bg-white border border-border">
-                  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-[#2d7a6e]/10">
-                    <Zap className="w-8 h-8 text-[#2d7a6e]" />
+                  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-[#233161]/10">
+                    <Zap className="w-8 h-8 text-[#233161]" />
                   </div>
                   <h3 className="text-xl font-semibold text-foreground">Innovation</h3>
                   <p className="text-muted-foreground">
@@ -153,8 +153,8 @@ export default function AboutPage() {
                   </p>
                 </div>
                 <div className="flex flex-col items-center text-center space-y-4 p-6 rounded-xl bg-white border border-border">
-                  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-[#2d7a6e]/10">
-                    <Heart className="w-8 h-8 text-[#2d7a6e]" />
+                  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-[#233161]/10">
+                    <Heart className="w-8 h-8 text-[#233161]" />
                   </div>
                   <h3 className="text-xl font-semibold text-foreground">Compassion</h3>
                   <p className="text-muted-foreground">
@@ -163,8 +163,8 @@ export default function AboutPage() {
                   </p>
                 </div>
                 <div className="flex flex-col items-center text-center space-y-4 p-6 rounded-xl bg-white border border-border">
-                  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-[#2d7a6e]/10">
-                    <Globe className="w-8 h-8 text-[#2d7a6e]" />
+                  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-[#233161]/10">
+                    <Globe className="w-8 h-8 text-[#233161]" />
                   </div>
                   <h3 className="text-xl font-semibold text-foreground">Global Perspective</h3>
                   <p className="text-muted-foreground">
@@ -206,10 +206,10 @@ export default function AboutPage() {
                   beginning.
                 </p>
                 <p>
-                  Today, we&apos;re proud to serve thousands of patients and connect them with
-                  certified healthcare providers across multiple countries. But our mission
-                  is far from complete. We&apos;re constantly innovating, listening to our
-                  users, and working towards a future where healthcare truly has no borders.
+                  Today, we&apos;re proud to connect patients with certified healthcare 
+                  providers across borders. But our mission is far from complete. We&apos;re 
+                  constantly innovating, listening to our users, and working towards a future 
+                  where healthcare truly has no borders.
                 </p>
               </div>
             </div>
@@ -219,7 +219,7 @@ export default function AboutPage() {
         {/* CTA Section */}
         <section className="w-full py-16 md:py-24 bg-[#f8f9fa]">
           <div className="container px-4 md:px-8 mx-auto max-w-7xl">
-            <div className="flex flex-col items-center space-y-8 text-center bg-gradient-to-br from-[#2d7a6e]/10 to-[#4a9d8f]/5 rounded-3xl p-12 md:p-16 border border-[#2d7a6e]/20">
+            <div className="flex flex-col items-center space-y-8 text-center bg-gradient-to-br from-[#233161]/10 to-[#e9b95c]/5 rounded-3xl p-12 md:p-16 border border-[#233161]/20">
               <div className="space-y-4 max-w-3xl">
                 <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-foreground">
                   Join Us in Transforming Healthcare
@@ -230,8 +230,8 @@ export default function AboutPage() {
                 </p>
               </div>
               <div className="flex flex-col gap-4 sm:flex-row sm:gap-4">
-                <Button asChild size="lg" className="bg-[#2d7a6e] hover:bg-[#25675d] text-white rounded-lg px-8">
-                  <Link href="/sign-up?as=patient">Get Started</Link>
+                <Button asChild size="lg" className="bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg px-8">
+                  <Link href="/sign-up?as=patient">Join the waitlist</Link>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="rounded-lg px-8 border-2">
                   <Link href="/pricing">View Pricing</Link>

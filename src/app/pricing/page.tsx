@@ -17,7 +17,7 @@ export default function PricingPage() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative w-full py-20 md:py-32 bg-gradient-to-br from-[#2d7a6e]/10 to-[#4a9d8f]/5">
+        <section className="relative w-full py-20 md:py-32 bg-gradient-to-br from-[#233161]/10 to-[#e9b95c]/5">
           <div className="container px-4 md:px-8 mx-auto max-w-7xl">
             <div className="flex flex-col items-center space-y-8 text-center">
               <div className="space-y-6 max-w-4xl">
@@ -60,19 +60,19 @@ export default function PricingPage() {
                     </div>
                     <ul className="space-y-3 pt-6">
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">30-minute video consultation</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">Digital clinic letter</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">Multilingual support</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">Secure medical records</span>
                       </li>
                       <li className="flex items-start gap-3">
@@ -85,16 +85,16 @@ export default function PricingPage() {
                       </li>
                     </ul>
                     <div className="pt-8">
-                      <Button asChild className="w-full bg-[#2d7a6e] hover:bg-[#25675d] text-white rounded-lg">
-                        <Link href="/sign-up?as=patient&plan=per-visit">Get Started</Link>
+                      <Button asChild className="w-full bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg">
+                        <Link href="/sign-up?as=patient&plan=per-visit">Join the waitlist</Link>
                       </Button>
                     </div>
                   </CardHeader>
                 </Card>
 
                 {/* Monthly Plan - Popular */}
-                <Card className="border-[#2d7a6e] border-2 relative shadow-lg">
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#2d7a6e] text-white px-4 py-1 rounded-full text-sm font-semibold">
+                <Card className="border-[#233161] border-2 relative shadow-lg">
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#233161] text-white px-4 py-1 rounded-full text-sm font-semibold">
                     Most Popular
                   </div>
                   <CardHeader className="p-8">
@@ -110,37 +110,37 @@ export default function PricingPage() {
                     </div>
                     <ul className="space-y-3 pt-6">
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">3 consultations per month</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">Digital clinic letters</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">Multilingual support</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">Secure medical records</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">Priority booking</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">Unlimited follow-ups</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">24/7 support</span>
                       </li>
                     </ul>
                     <div className="pt-8">
-                      <Button asChild className="w-full bg-[#2d7a6e] hover:bg-[#25675d] text-white rounded-lg">
-                        <Link href="/sign-up?as=patient&plan=monthly">Get Started</Link>
+                      <Button asChild className="w-full bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg">
+                        <Link href="/sign-up?as=patient&plan=monthly">Join the waitlist</Link>
                       </Button>
                     </div>
                   </CardHeader>
@@ -148,7 +148,7 @@ export default function PricingPage() {
 
                 {/* Annual Plan */}
                 <Card className="border-border relative">
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#4a9d8f] text-white px-4 py-1 rounded-full text-sm font-semibold">
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#e9b95c] text-white px-4 py-1 rounded-full text-sm font-semibold">
                     Save 20%
                   </div>
                   <CardHeader className="p-8">
@@ -161,45 +161,45 @@ export default function PricingPage() {
                         <span className="text-5xl font-bold text-foreground">$949</span>
                         <span className="text-muted-foreground ml-2">/year</span>
                       </div>
-                      <p className="text-sm text-[#2d7a6e] mt-2">Save $239 per year</p>
+                      <p className="text-sm text-[#233161] mt-2">Save $239 per year</p>
                     </div>
                     <ul className="space-y-3 pt-6">
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">36 consultations per year</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">Digital clinic letters</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">Multilingual support</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">Secure medical records</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">Priority booking</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">Unlimited follow-ups</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">24/7 priority support</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">Annual health review</span>
                       </li>
                     </ul>
                     <div className="pt-8">
-                      <Button asChild className="w-full bg-[#2d7a6e] hover:bg-[#25675d] text-white rounded-lg">
-                        <Link href="/sign-up?as=patient&plan=annual">Get Started</Link>
+                      <Button asChild className="w-full bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg">
+                        <Link href="/sign-up?as=patient&plan=annual">Join the waitlist</Link>
                       </Button>
                     </div>
                   </CardHeader>
@@ -238,23 +238,23 @@ export default function PricingPage() {
                     </div>
                     <ul className="space-y-3 pt-6">
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">Up to 50 patients/month</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">Secure video consultations</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">Scheduling dashboard</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">Digital clinic letters</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">Patient records management</span>
                       </li>
                       <li className="flex items-start gap-3">
@@ -263,16 +263,16 @@ export default function PricingPage() {
                       </li>
                     </ul>
                     <div className="pt-8">
-                      <Button asChild className="w-full bg-[#2d7a6e] hover:bg-[#25675d] text-white rounded-lg">
-                        <Link href="/sign-up?as=doctor&plan=starter">Get Started</Link>
+                      <Button asChild className="w-full bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg">
+                        <Link href="/sign-up?as=doctor&plan=starter">Apply as a provider</Link>
                       </Button>
                     </div>
                   </CardHeader>
                 </Card>
 
                 {/* Professional */}
-                <Card className="border-[#2d7a6e] border-2 relative shadow-lg">
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#2d7a6e] text-white px-4 py-1 rounded-full text-sm font-semibold">
+                <Card className="border-[#233161] border-2 relative shadow-lg">
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#233161] text-white px-4 py-1 rounded-full text-sm font-semibold">
                     Recommended
                   </div>
                   <CardHeader className="p-8">
@@ -289,41 +289,41 @@ export default function PricingPage() {
                     </div>
                     <ul className="space-y-3 pt-6">
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">Up to 150 patients/month</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">Secure video consultations</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">Advanced scheduling</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">Digital clinic letters</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">Patient records management</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">Multi-provider support (up to 3)</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">Analytics dashboard</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">Priority support</span>
                       </li>
                     </ul>
                     <div className="pt-8">
-                      <Button asChild className="w-full bg-[#2d7a6e] hover:bg-[#25675d] text-white rounded-lg">
-                        <Link href="/sign-up?as=doctor&plan=professional">Get Started</Link>
+                      <Button asChild className="w-full bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg">
+                        <Link href="/sign-up?as=doctor&plan=professional">Apply as a provider</Link>
                       </Button>
                     </div>
                   </CardHeader>
@@ -344,41 +344,41 @@ export default function PricingPage() {
                     </div>
                     <ul className="space-y-3 pt-6">
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">Unlimited patients</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">All Professional features</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">Unlimited providers</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">Custom branding</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">Dedicated account manager</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">API access</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">Custom integrations</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-[#2d7a6e] mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">SLA guarantee</span>
                       </li>
                     </ul>
                     <div className="pt-8">
                       <Button asChild variant="outline" className="w-full rounded-lg border-2">
-                        <Link href="/contact-sales">Contact Sales</Link>
+                        <Link href="/contact-sales">Talk to sales</Link>
                       </Button>
                     </div>
                   </CardHeader>
@@ -450,21 +450,21 @@ export default function PricingPage() {
         {/* CTA Section */}
         <section className="w-full py-16 md:py-24 bg-[#f8f9fa]">
           <div className="container px-4 md:px-8 mx-auto max-w-7xl">
-            <div className="flex flex-col items-center space-y-8 text-center bg-gradient-to-br from-[#2d7a6e]/10 to-[#4a9d8f]/5 rounded-3xl p-12 md:p-16 border border-[#2d7a6e]/20">
+            <div className="flex flex-col items-center space-y-8 text-center bg-gradient-to-br from-[#233161]/10 to-[#e9b95c]/5 rounded-3xl p-12 md:p-16 border border-[#233161]/20">
               <div className="space-y-4 max-w-3xl">
                 <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-foreground">
                   Ready to Get Started?
                 </h2>
                 <p className="text-muted-foreground text-lg">
-                  Join thousands of satisfied users on SITANA Global
+                  Choose the plan that works best for you
                 </p>
               </div>
               <div className="flex flex-col gap-4 sm:flex-row sm:gap-4">
-                <Button asChild size="lg" className="bg-[#2d7a6e] hover:bg-[#25675d] text-white rounded-lg px-8">
-                  <Link href="/sign-up?as=patient">Start as Patient</Link>
+                <Button asChild size="lg" className="bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg px-8">
+                  <Link href="/sign-up?as=patient">Join the waitlist</Link>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="rounded-lg px-8 border-2">
-                  <Link href="/sign-up?as=doctor">Join as Doctor</Link>
+                  <Link href="/sign-up?as=doctor">Apply as a provider</Link>
                 </Button>
               </div>
             </div>

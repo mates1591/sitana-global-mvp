@@ -74,7 +74,7 @@ export default function BlogPage() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative w-full py-20 md:py-32 bg-gradient-to-br from-[#2d7a6e]/10 to-[#4a9d8f]/5">
+        <section className="relative w-full py-20 md:py-32 bg-gradient-to-br from-[#233161]/10 to-[#e9b95c]/5">
           <div className="container px-4 md:px-8 mx-auto max-w-7xl">
             <div className="flex flex-col items-center space-y-8 text-center">
               <div className="space-y-6 max-w-4xl">
@@ -93,12 +93,12 @@ export default function BlogPage() {
         <section className="w-full py-16 md:py-24 bg-white">
           <div className="container px-4 md:px-8 mx-auto max-w-7xl">
             <div className="max-w-5xl mx-auto">
-              <div className="inline-block px-3 py-1 rounded-full bg-[#2d7a6e]/10 text-[#2d7a6e] text-sm font-medium mb-6">
+              <div className="inline-block px-3 py-1 rounded-full bg-[#233161]/10 text-[#233161] text-sm font-medium mb-6">
                 Featured Article
               </div>
               <Card className="border-border overflow-hidden">
                 <CardHeader className="p-0">
-                  <div className="bg-gradient-to-br from-[#2d7a6e]/20 to-[#4a9d8f]/10 p-16 text-center">
+                  <div className="bg-gradient-to-br from-[#233161]/20 to-[#e9b95c]/10 p-16 text-center">
                     <span className="text-8xl">🌟</span>
                   </div>
                   <div className="p-8">
@@ -111,23 +111,22 @@ export default function BlogPage() {
                         <Clock className="w-4 h-4" />
                         8 min read
                       </span>
-                      <span className="px-2 py-1 rounded-full bg-[#2d7a6e]/10 text-[#2d7a6e] text-xs font-medium">
+                      <span className="px-2 py-1 rounded-full bg-[#233161]/10 text-[#233161] text-xs font-medium">
                         Company News
                       </span>
                     </div>
                     <CardTitle className="text-3xl md:text-4xl mb-4 text-foreground">
-                      SITANA Global Expands to 50 Countries: A New Era in Global Healthcare
+                      SITANA Global: Building the Future of Cross-Border Healthcare
                     </CardTitle>
                     <CardDescription className="text-lg mb-6">
-                      We&apos;re thrilled to announce that SITANA Global is now serving patients
-                      and connecting healthcare providers across 50 countries. This milestone
-                      represents our commitment to making quality healthcare accessible to
-                      everyone, everywhere. Learn about our journey, the challenges we&apos;ve
-                      overcome, and what this means for the future of telemedicine.
+                      We&apos;re committed to making quality healthcare accessible to everyone, 
+                      everywhere. Our platform continues to grow, connecting patients with 
+                      healthcare providers across borders. Learn about our journey, the challenges 
+                      we&apos;ve overcome, and what this means for the future of telemedicine.
                     </CardDescription>
-                    <Button asChild className="bg-[#2d7a6e] hover:bg-[#25675d] text-white rounded-lg">
+                    <Button asChild className="bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg">
                       <Link href="/blog/expansion-50-countries">
-                        Read Full Article <ArrowRight className="w-4 h-4 ml-2" />
+                        Read: Building the Future of Cross-Border Healthcare <ArrowRight className="w-4 h-4 ml-2" />
                       </Link>
                     </Button>
                   </div>
@@ -153,7 +152,7 @@ export default function BlogPage() {
                 {blogPosts.map((post) => (
                   <Card key={post.id} className="border-border hover:shadow-lg transition-shadow">
                     <CardHeader>
-                      <div className="bg-gradient-to-br from-[#2d7a6e]/20 to-[#4a9d8f]/10 rounded-lg p-12 text-center mb-4">
+                      <div className="bg-gradient-to-br from-[#233161]/20 to-[#e9b95c]/10 rounded-lg p-12 text-center mb-4">
                         <span className="text-6xl">{post.image}</span>
                       </div>
                       <div className="flex flex-wrap items-center gap-3 text-sm text-muted-foreground mb-3">
@@ -166,10 +165,10 @@ export default function BlogPage() {
                           {post.readTime}
                         </span>
                       </div>
-                      <span className="inline-block px-2 py-1 rounded-full bg-[#2d7a6e]/10 text-[#2d7a6e] text-xs font-medium mb-3 w-fit">
+                      <span className="inline-block px-2 py-1 rounded-full bg-[#233161]/10 text-[#233161] text-xs font-medium mb-3 w-fit">
                         {post.category}
                       </span>
-                      <CardTitle className="text-xl mb-2 text-foreground hover:text-[#2d7a6e] transition-colors">
+                      <CardTitle className="text-xl mb-2 text-foreground hover:text-[#233161] transition-colors">
                         <Link href={`/blog/${post.id}`}>{post.title}</Link>
                       </CardTitle>
                       <CardDescription className="text-base mb-4">
@@ -177,9 +176,9 @@ export default function BlogPage() {
                       </CardDescription>
                       <Link
                         href={`/blog/${post.id}`}
-                        className="inline-flex items-center text-[#2d7a6e] hover:text-[#25675d] font-medium transition-colors"
+                        className="inline-flex items-center text-[#233161] hover:text-[#1a2447] font-medium transition-colors"
                       >
-                        Read more <ArrowRight className="w-4 h-4 ml-1" />
+                        Read: {post.title} <ArrowRight className="w-4 h-4 ml-1" />
                       </Link>
                     </CardHeader>
                   </Card>
@@ -214,10 +213,10 @@ export default function BlogPage() {
                     href={`/blog/category/${category.name.toLowerCase().replace(/\s+/g, "-")}`}
                     className="group"
                   >
-                    <Card className="border-border hover:border-[#2d7a6e] hover:shadow-md transition-all">
+                    <Card className="border-border hover:border-[#233161] hover:shadow-md transition-all">
                       <CardHeader className="text-center">
                         <div className="text-4xl mb-3">{category.icon}</div>
-                        <CardTitle className="text-lg text-foreground group-hover:text-[#2d7a6e] transition-colors">
+                        <CardTitle className="text-lg text-foreground group-hover:text-[#233161] transition-colors">
                           {category.name}
                         </CardTitle>
                         <CardDescription>
@@ -235,7 +234,7 @@ export default function BlogPage() {
         {/* Newsletter Section */}
         <section className="w-full py-16 md:py-24 bg-[#f8f9fa]">
           <div className="container px-4 md:px-8 mx-auto max-w-7xl">
-            <div className="flex flex-col items-center space-y-8 text-center bg-gradient-to-br from-[#2d7a6e]/10 to-[#4a9d8f]/5 rounded-3xl p-12 md:p-16 border border-[#2d7a6e]/20">
+            <div className="flex flex-col items-center space-y-8 text-center bg-gradient-to-br from-[#233161]/10 to-[#e9b95c]/5 rounded-3xl p-12 md:p-16 border border-[#233161]/20">
               <div className="space-y-4 max-w-3xl">
                 <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-foreground">
                   Stay Updated
@@ -248,9 +247,9 @@ export default function BlogPage() {
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="flex-1 px-4 py-3 rounded-lg border border-border bg-white focus:outline-none focus:ring-2 focus:ring-[#2d7a6e] focus:border-transparent"
+                  className="flex-1 px-4 py-3 rounded-lg border border-border bg-white focus:outline-none focus:ring-2 focus:ring-[#233161] focus:border-transparent"
                 />
-                <Button className="bg-[#2d7a6e] hover:bg-[#25675d] text-white rounded-lg px-8 whitespace-nowrap">
+                <Button className="bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg px-8 whitespace-nowrap">
                   Subscribe
                 </Button>
               </div>

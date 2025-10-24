@@ -16,7 +16,7 @@ export default function ContactPage() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative w-full py-20 md:py-32 bg-gradient-to-br from-[#2d7a6e]/10 to-[#4a9d8f]/5">
+        <section className="relative w-full py-20 md:py-32 bg-gradient-to-br from-[#233161]/10 to-[#e9b95c]/5">
           <div className="container px-4 md:px-8 mx-auto max-w-7xl">
             <div className="flex flex-col items-center space-y-8 text-center">
               <div className="space-y-6 max-w-4xl">
@@ -61,7 +61,7 @@ export default function ContactPage() {
                           name="firstName"
                           type="text"
                           required
-                          className="w-full px-4 py-3 rounded-lg border border-border bg-white focus:outline-none focus:ring-2 focus:ring-[#2d7a6e] focus:border-transparent transition-all"
+                          className="w-full px-4 py-3 rounded-lg border border-border bg-white focus:outline-none focus:ring-2 focus:ring-[#233161] focus:border-transparent transition-all"
                           placeholder="John"
                         />
                       </div>
@@ -77,7 +77,7 @@ export default function ContactPage() {
                           name="lastName"
                           type="text"
                           required
-                          className="w-full px-4 py-3 rounded-lg border border-border bg-white focus:outline-none focus:ring-2 focus:ring-[#2d7a6e] focus:border-transparent transition-all"
+                          className="w-full px-4 py-3 rounded-lg border border-border bg-white focus:outline-none focus:ring-2 focus:ring-[#233161] focus:border-transparent transition-all"
                           placeholder="Doe"
                         />
                       </div>
@@ -94,7 +94,7 @@ export default function ContactPage() {
                         name="email"
                         type="email"
                         required
-                        className="w-full px-4 py-3 rounded-lg border border-border bg-white focus:outline-none focus:ring-2 focus:ring-[#2d7a6e] focus:border-transparent transition-all"
+                        className="w-full px-4 py-3 rounded-lg border border-border bg-white focus:outline-none focus:ring-2 focus:ring-[#233161] focus:border-transparent transition-all"
                         placeholder="john.doe@example.com"
                       />
                     </div>
@@ -109,7 +109,7 @@ export default function ContactPage() {
                         id="phone"
                         name="phone"
                         type="tel"
-                        className="w-full px-4 py-3 rounded-lg border border-border bg-white focus:outline-none focus:ring-2 focus:ring-[#2d7a6e] focus:border-transparent transition-all"
+                        className="w-full px-4 py-3 rounded-lg border border-border bg-white focus:outline-none focus:ring-2 focus:ring-[#233161] focus:border-transparent transition-all"
                         placeholder="+1 (555) 123-4567"
                       />
                     </div>
@@ -124,7 +124,7 @@ export default function ContactPage() {
                         id="subject"
                         name="subject"
                         required
-                        className="w-full px-4 py-3 rounded-lg border border-border bg-white focus:outline-none focus:ring-2 focus:ring-[#2d7a6e] focus:border-transparent transition-all"
+                        className="w-full px-4 py-3 rounded-lg border border-border bg-white focus:outline-none focus:ring-2 focus:ring-[#233161] focus:border-transparent transition-all"
                       >
                         <option value="">Select a subject</option>
                         <option value="general">General Inquiry</option>
@@ -148,7 +148,7 @@ export default function ContactPage() {
                         name="message"
                         required
                         rows={6}
-                        className="w-full px-4 py-3 rounded-lg border border-border bg-white focus:outline-none focus:ring-2 focus:ring-[#2d7a6e] focus:border-transparent transition-all resize-none"
+                        className="w-full px-4 py-3 rounded-lg border border-border bg-white focus:outline-none focus:ring-2 focus:ring-[#233161] focus:border-transparent transition-all resize-none"
                         placeholder="Tell us how we can help you..."
                       />
                     </div>
@@ -158,14 +158,14 @@ export default function ContactPage() {
                         name="consent"
                         type="checkbox"
                         required
-                        className="mt-1 w-4 h-4 rounded border-border text-[#2d7a6e] focus:ring-[#2d7a6e] focus:ring-2"
+                        className="mt-1 w-4 h-4 rounded border-border text-[#233161] focus:ring-[#233161] focus:ring-2"
                       />
                       <label
                         htmlFor="consent"
                         className="text-sm text-muted-foreground"
                       >
                         I agree to the{" "}
-                        <a href="#" className="text-[#2d7a6e] hover:underline">
+                        <a href="#" className="text-[#233161] hover:underline">
                           Privacy Policy
                         </a>{" "}
                         and consent to being contacted by SITANA Global regarding my inquiry.{" "}
@@ -175,7 +175,7 @@ export default function ContactPage() {
                     <Button
                       type="submit"
                       size="lg"
-                      className="w-full bg-[#2d7a6e] hover:bg-[#25675d] text-white rounded-lg"
+                      className="w-full bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg"
                     >
                       Send Message
                     </Button>
@@ -198,15 +198,15 @@ export default function ContactPage() {
                   <Card className="border-border">
                     <CardHeader>
                       <div className="flex items-start gap-4">
-                        <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#2d7a6e]/10 flex-shrink-0">
-                          <Mail className="w-6 h-6 text-[#2d7a6e]" />
+                        <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#233161]/10 flex-shrink-0">
+                          <Mail className="w-6 h-6 text-[#233161]" />
                         </div>
                         <div className="space-y-1">
                           <CardTitle className="text-lg text-foreground">Email</CardTitle>
                           <CardDescription className="text-base">
                             <a
                               href="mailto:support@sitanaglobal.com"
-                              className="text-[#2d7a6e] hover:underline"
+                              className="text-[#233161] hover:underline"
                             >
                               support@sitanaglobal.com
                             </a>
@@ -222,15 +222,15 @@ export default function ContactPage() {
                   <Card className="border-border">
                     <CardHeader>
                       <div className="flex items-start gap-4">
-                        <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#2d7a6e]/10 flex-shrink-0">
-                          <Phone className="w-6 h-6 text-[#2d7a6e]" />
+                        <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#233161]/10 flex-shrink-0">
+                          <Phone className="w-6 h-6 text-[#233161]" />
                         </div>
                         <div className="space-y-1">
                           <CardTitle className="text-lg text-foreground">Phone</CardTitle>
                           <CardDescription className="text-base">
                             <a
                               href="tel:+18005551234"
-                              className="text-[#2d7a6e] hover:underline"
+                              className="text-[#233161] hover:underline"
                             >
                               +1 (800) 555-1234
                             </a>
@@ -246,8 +246,8 @@ export default function ContactPage() {
                   <Card className="border-border">
                     <CardHeader>
                       <div className="flex items-start gap-4">
-                        <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#2d7a6e]/10 flex-shrink-0">
-                          <MapPin className="w-6 h-6 text-[#2d7a6e]" />
+                        <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#233161]/10 flex-shrink-0">
+                          <MapPin className="w-6 h-6 text-[#233161]" />
                         </div>
                         <div className="space-y-1">
                           <CardTitle className="text-lg text-foreground">Office</CardTitle>
@@ -268,8 +268,8 @@ export default function ContactPage() {
                   <Card className="border-border">
                     <CardHeader>
                       <div className="flex items-start gap-4">
-                        <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#2d7a6e]/10 flex-shrink-0">
-                          <Clock className="w-6 h-6 text-[#2d7a6e]" />
+                        <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#233161]/10 flex-shrink-0">
+                          <Clock className="w-6 h-6 text-[#233161]" />
                         </div>
                         <div className="space-y-1">
                           <CardTitle className="text-lg text-foreground">Business Hours</CardTitle>
@@ -294,7 +294,7 @@ export default function ContactPage() {
                   <div className="space-y-3">
                     <a
                       href="#"
-                      className="block p-4 rounded-lg border border-border hover:border-[#2d7a6e] hover:shadow-md transition-all"
+                      className="block p-4 rounded-lg border border-border hover:border-[#233161] hover:shadow-md transition-all"
                     >
                       <div className="font-semibold text-foreground">
                         Patient Support Center
@@ -305,7 +305,7 @@ export default function ContactPage() {
                     </a>
                     <a
                       href="#"
-                      className="block p-4 rounded-lg border border-border hover:border-[#2d7a6e] hover:shadow-md transition-all"
+                      className="block p-4 rounded-lg border border-border hover:border-[#233161] hover:shadow-md transition-all"
                     >
                       <div className="font-semibold text-foreground">
                         Healthcare Provider Portal
@@ -316,7 +316,7 @@ export default function ContactPage() {
                     </a>
                     <a
                       href="#"
-                      className="block p-4 rounded-lg border border-border hover:border-[#2d7a6e] hover:shadow-md transition-all"
+                      className="block p-4 rounded-lg border border-border hover:border-[#233161] hover:shadow-md transition-all"
                     >
                       <div className="font-semibold text-foreground">FAQ Center</div>
                       <div className="text-sm text-muted-foreground">
@@ -333,7 +333,7 @@ export default function ContactPage() {
         {/* CTA Section */}
         <section className="w-full py-16 md:py-24 bg-[#f8f9fa]">
           <div className="container px-4 md:px-8 mx-auto max-w-7xl">
-            <div className="flex flex-col items-center space-y-8 text-center bg-gradient-to-br from-[#2d7a6e]/10 to-[#4a9d8f]/5 rounded-3xl p-12 md:p-16 border border-[#2d7a6e]/20">
+            <div className="flex flex-col items-center space-y-8 text-center bg-gradient-to-br from-[#233161]/10 to-[#e9b95c]/5 rounded-3xl p-12 md:p-16 border border-[#233161]/20">
               <div className="space-y-4 max-w-3xl">
                 <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-foreground">
                   Ready to Transform Your Healthcare Experience?
@@ -343,11 +343,11 @@ export default function ContactPage() {
                 </p>
               </div>
               <div className="flex flex-col gap-4 sm:flex-row sm:gap-4">
-                <Button asChild size="lg" className="bg-[#2d7a6e] hover:bg-[#25675d] text-white rounded-lg px-8">
-                  <a href="/sign-up?as=patient">Get Started as Patient</a>
+                <Button asChild size="lg" className="bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg px-8">
+                  <a href="/sign-up?as=patient">Join the waitlist</a>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="rounded-lg px-8 border-2">
-                  <a href="/sign-up?as=doctor">Join as Healthcare Provider</a>
+                  <a href="/sign-up?as=doctor">Apply as a provider</a>
                 </Button>
               </div>
             </div>
