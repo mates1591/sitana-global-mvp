@@ -231,31 +231,6 @@ export default function BlogPage() {
           </div>
         </section>
 
-        {/* Newsletter Section */}
-        <section className="w-full py-16 md:py-24 bg-[#f8f9fa]">
-          <div className="container px-4 md:px-8 mx-auto max-w-7xl">
-            <div className="flex flex-col items-center space-y-8 text-center bg-gradient-to-br from-[#233161]/10 to-[#e9b95c]/5 rounded-3xl p-12 md:p-16 border border-[#233161]/20">
-              <div className="space-y-4 max-w-3xl">
-                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-foreground">
-                  Stay Updated
-                </h2>
-                <p className="text-muted-foreground text-lg">
-                  Subscribe to our newsletter for the latest healthcare insights and updates
-                </p>
-              </div>
-              <div className="flex flex-col sm:flex-row gap-4 w-full max-w-md">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="flex-1 px-4 py-3 rounded-lg border border-border bg-white focus:outline-none focus:ring-2 focus:ring-[#233161] focus:border-transparent"
-                />
-                <Button className="bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg px-8 whitespace-nowrap">
-                  Subscribe
-                </Button>
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
 
       <Footer />

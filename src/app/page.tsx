@@ -40,6 +40,9 @@ export default function Home() {
                 <h1 className="text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl text-foreground">
                   Global expertise. Local care.
                 </h1>
+                <p className="text-2xl font-semibold text-foreground">
+                  Best healthcare, from anywhere.
+                </p>
                 <p className="mx-auto max-w-[700px] text-muted-foreground text-lg md:text-xl leading-relaxed">
                   A quick symptom check routes you to urgent, online, or local 
                   appointments—then you get a clear clinic letter. Second opinions 
@@ -54,7 +57,7 @@ export default function Home() {
                   size="lg" 
                   className="bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg px-8"
                 >
-                  <Link href="#demo">Get a demo</Link>
+                  <a href="https://portal.sitanaglobal.com" target="_blank" rel="noopener noreferrer">Get a demo</a>
                 </Button>
                 <Button 
                   asChild 
@@ -62,7 +65,7 @@ export default function Home() {
                   variant="outline" 
                   className="rounded-lg px-8 border-2"
                 >
-                  <Link href="/sign-up?as=patient">Join the waitlist</Link>
+                  <a href="https://portal.sitanaglobal.com" target="_blank" rel="noopener noreferrer">Join the waitlist</a>
                 </Button>
               </div>
 
@@ -95,9 +98,7 @@ export default function Home() {
                     </div>
                     <CardTitle className="text-foreground">Multilingual Platform</CardTitle>
                     <CardDescription>
-                      Register and consult in your preferred language — English, Arabic,
-                      French, or Spanish. Live subtitles bridge language gaps during
-                      consultations.
+                      Register and consult in English, العربية, Français. Live subtitles bridge language gaps.
                     </CardDescription>
                   </CardHeader>
                 </Card>
@@ -106,10 +107,9 @@ export default function Home() {
                     <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#233161]/10 mb-3">
                       <Activity className="w-6 h-6 text-[#233161]" />
                     </div>
-                    <CardTitle className="text-foreground">Smart Triage System</CardTitle>
+                    <CardTitle className="text-foreground">Smart Triage (human-supervised)</CardTitle>
                     <CardDescription>
-                      Complete a short triage form and instantly know whether your case
-                      requires urgent care or can proceed to online consultation.
+                      AI assists and a clinician supervises to keep it safe and accurate.
                     </CardDescription>
                   </CardHeader>
                 </Card>
@@ -118,10 +118,9 @@ export default function Home() {
                     <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#233161]/10 mb-3">
                       <Video className="w-6 h-6 text-[#233161]" />
                     </div>
-                    <CardTitle className="text-foreground">Secure Video Consultations</CardTitle>
+                    <CardTitle className="text-foreground">Secure Video Consultation & Full Medical Report</CardTitle>
                     <CardDescription>
-                      Book remote sessions with certified doctors. All communication
-                      remains private and encrypted throughout the consultation.
+                      Meet via encrypted video; receive a full medical report after each consultation.
                     </CardDescription>
                   </CardHeader>
                 </Card>
@@ -130,9 +129,9 @@ export default function Home() {
                     <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#233161]/10 mb-3">
                       <FileText className="w-6 h-6 text-[#233161]" />
                     </div>
-                    <CardTitle className="text-foreground">Digital Clinic Letters</CardTitle>
+                    <CardTitle className="text-foreground">Full Medical Report</CardTitle>
                     <CardDescription>
-                      After each session, receive a comprehensive digital clinic letter,
+                      After each session, receive a comprehensive full medical report,
                       securely stored for your review and future reference.
                     </CardDescription>
                   </CardHeader>
@@ -156,8 +155,58 @@ export default function Home() {
                     </div>
                     <CardTitle className="text-foreground">International Second Opinions</CardTitle>
                     <CardDescription>
-                      Get expert second opinions on de-identified medical data,
-                      protecting patient identity while ensuring quality review.
+                      Expert reviews on de-identified medical data from international specialists.
+                    </CardDescription>
+                  </CardHeader>
+                </Card>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Services Section */}
+        <section className="w-full py-16 md:py-24 bg-[#f8f9fa]">
+          <div className="container px-4 md:px-8 mx-auto max-w-7xl">
+            <div className="flex flex-col items-center space-y-12">
+              <div className="space-y-4 text-center max-w-3xl">
+                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-foreground">
+                  Our Services
+                </h2>
+                <p className="text-muted-foreground text-lg">
+                  Comprehensive healthcare solutions for every need
+                </p>
+              </div>
+              <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 w-full max-w-6xl">
+                <Card className="border-border hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#233161]/10 mb-3">
+                      <Stethoscope className="w-6 h-6 text-[#233161]" />
+                    </div>
+                    <CardTitle className="text-foreground">Doctor-to-Doctor Consultations</CardTitle>
+                    <CardDescription>
+                      Secure peer consults for case discussion and guidance.
+                    </CardDescription>
+                  </CardHeader>
+                </Card>
+                <Card className="border-border hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#233161]/10 mb-3">
+                      <Building2 className="w-6 h-6 text-[#233161]" />
+                    </div>
+                    <CardTitle className="text-foreground">Hospital-to-Expert Collaboration</CardTitle>
+                    <CardDescription>
+                      Fill specialty gaps for complex/rare cases by connecting hospitals with international experts.
+                    </CardDescription>
+                  </CardHeader>
+                </Card>
+                <Card className="border-border hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#233161]/10 mb-3">
+                      <HeartPulse className="w-6 h-6 text-[#233161]" />
+                    </div>
+                    <CardTitle className="text-foreground">International Second Opinions & Care Navigation</CardTitle>
+                    <CardDescription>
+                      Independent second opinions plus optional treatment travel; includes wellness & prevention programs.
                     </CardDescription>
                   </CardHeader>
                 </Card>
@@ -167,7 +216,7 @@ export default function Home() {
         </section>
 
         {/* How It Works Section */}
-        <section id="how-it-works" className="w-full py-16 md:py-24 bg-[#f8f9fa]">
+        <section id="how-it-works" className="w-full py-16 md:py-24 bg-white">
           <div className="container px-4 md:px-8 mx-auto max-w-7xl">
             <div className="flex flex-col items-center space-y-12">
               <div className="space-y-4 text-center max-w-3xl">
@@ -175,44 +224,62 @@ export default function Home() {
                   How It Works
                 </h2>
                 <p className="text-muted-foreground text-lg">
-                  Simple, secure, and accessible healthcare in four easy steps
+                  Your journey to better healthcare
                 </p>
               </div>
-              <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 w-full max-w-6xl">
+              <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 w-full max-w-6xl">
                 <div className="flex flex-col items-center text-center space-y-4">
                   <div className="flex items-center justify-center w-16 h-16 rounded-full bg-[#233161] text-white text-2xl font-bold">
                     1
                   </div>
-                  <h3 className="text-xl font-semibold text-foreground">Sign up</h3>
+                  <h3 className="text-xl font-semibold text-foreground">Consent</h3>
                   <p className="text-muted-foreground">
-                    Create your account and complete your profile
+                    Review and agree to privacy and care terms
                   </p>
                 </div>
                 <div className="flex flex-col items-center text-center space-y-4">
                   <div className="flex items-center justify-center w-16 h-16 rounded-full bg-[#233161] text-white text-2xl font-bold">
                     2
                   </div>
-                  <h3 className="text-xl font-semibold text-foreground">Check symptoms</h3>
+                  <h3 className="text-xl font-semibold text-foreground">Quick triage</h3>
                   <p className="text-muted-foreground">
-                    Quick assessment to find the right care option
+                    Human-supervised assessment to determine care path
                   </p>
                 </div>
                 <div className="flex flex-col items-center text-center space-y-4">
                   <div className="flex items-center justify-center w-16 h-16 rounded-full bg-[#233161] text-white text-2xl font-bold">
                     3
                   </div>
-                  <h3 className="text-xl font-semibold text-foreground">Get care</h3>
+                  <h3 className="text-xl font-semibold text-foreground">Upload investigations</h3>
                   <p className="text-muted-foreground">
-                    Book urgent, online, or local appointments
+                    Share relevant medical records and test results
                   </p>
                 </div>
                 <div className="flex flex-col items-center text-center space-y-4">
                   <div className="flex items-center justify-center w-16 h-16 rounded-full bg-[#233161] text-white text-2xl font-bold">
                     4
                   </div>
-                  <h3 className="text-xl font-semibold text-foreground">Receive summary</h3>
+                  <h3 className="text-xl font-semibold text-foreground">Get consultation</h3>
                   <p className="text-muted-foreground">
-                    Get your clinic letter and access it anytime
+                    Online consult or local appointment as needed
+                  </p>
+                </div>
+                <div className="flex flex-col items-center text-center space-y-4">
+                  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-[#233161] text-white text-2xl font-bold">
+                    5
+                  </div>
+                  <h3 className="text-xl font-semibold text-foreground">Full medical report</h3>
+                  <p className="text-muted-foreground">
+                    Receive comprehensive documentation of your care
+                  </p>
+                </div>
+                <div className="flex flex-col items-center text-center space-y-4">
+                  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-[#233161] text-white text-2xl font-bold">
+                    6
+                  </div>
+                  <h3 className="text-xl font-semibold text-foreground">Optional follow-up</h3>
+                  <p className="text-muted-foreground">
+                    Second opinion or doctor-to-doctor consult if needed
                   </p>
                 </div>
               </div>
@@ -242,7 +309,7 @@ export default function Home() {
                       <Building2 className="w-6 h-6 text-[#233161]" />
                     </div>
                     <CardTitle className="text-2xl text-foreground">
-                      Hospitals / Clinics
+                      Hospitals & Health Organizations
                     </CardTitle>
                     <p className="text-lg font-semibold text-foreground">
                       Right door, first time. We triage, prepare, and hand off cleanly to your clinic—your clinicians stay in control.
@@ -251,29 +318,25 @@ export default function Home() {
                       <ul className="space-y-2">
                         <li className="flex items-start gap-2">
                           <span className="text-[#233161] mt-1">•</span>
-                          <span>Second opinions & multidisciplinary input</span>
+                          <span><strong>On-Demand Specialty Coverage:</strong> Access our network of specialists to fill service gaps and offer new lines of cost-effective, quality care</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-[#233161] mt-1">•</span>
-                          <span>Referrals: exams, tests, treatment, admission, surgery</span>
+                          <span><strong>Global Expert Second Opinions:</strong> For complex cases requiring multispecialty review with input from international experts</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-[#233161] mt-1">•</span>
-                          <span>Medical-legal consultation support</span>
+                          <span><strong>Ensure Regulatory Compliance:</strong> Built with data protection and privacy-by-design, meeting regional and international standards</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-[#233161] mt-1">•</span>
-                          <span>Right door, first time; reduce bounced referrals</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="text-[#233161] mt-1">•</span>
-                          <span>Faster time-to-specialist; fewer no-shows</span>
+                          <span><strong>Optimize Patient Pathways:</strong> Integrate our navigation to reduce administrative burden, streamline referrals, and improve patient throughput</span>
                         </li>
                       </ul>
                     </CardDescription>
                     <div className="mt-auto pt-4">
                       <Button asChild className="w-full bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg">
-                        <Link href="#demo">Request a demo</Link>
+                        <a href="https://portal.sitanaglobal.com" target="_blank" rel="noopener noreferrer">Request a demo</a>
                       </Button>
                     </div>
                   </CardHeader>
@@ -295,37 +358,25 @@ export default function Home() {
                       <ul className="space-y-2">
                         <li className="flex items-start gap-2">
                           <span className="text-[#233161] mt-1">•</span>
-                          <span>Doctor-to-doctor second opinions on your cases</span>
+                          <span><strong>Secure Specialist Consultations:</strong> Direct, encrypted consultations to discuss patient cases with HIPAA compliance</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-[#233161] mt-1">•</span>
-                          <span>Specialized input for patients under your care</span>
+                          <span><strong>Maintain Care Continuity:</strong> Provide continuous care for your patients while accessing specialist input, keeping them within your practice</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-[#233161] mt-1">•</span>
-                          <span>Reduce unnecessary referrals to specialty clinics</span>
+                          <span><strong>Structured Feedback & Insights:</strong> Receive documented feedback and insights on your cases with audit trail</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-[#233161] mt-1">•</span>
-                          <span>Secure portal with de-identified patient data</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="text-[#233161] mt-1">•</span>
-                          <span>Private pathway for sensitive (e.g., mental health) consults</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="text-[#233161] mt-1">•</span>
-                          <span>Expand your cross-border network & collaboration</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="text-[#233161] mt-1">•</span>
-                          <span>Structured handoffs, audit trail, rapid turnaround</span>
+                          <span><strong>Expand Your Professional Network:</strong> Collaborate and build relationships with specialists across borders</span>
                         </li>
                       </ul>
                     </CardDescription>
                     <div className="mt-auto pt-4">
                       <Button asChild className="w-full bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg">
-                        <Link href="/sign-up?as=doctor">Apply as a provider</Link>
+                        <a href="https://portal.sitanaglobal.com" target="_blank" rel="noopener noreferrer">Apply as a provider</a>
                       </Button>
                     </div>
                   </CardHeader>
@@ -365,7 +416,7 @@ export default function Home() {
                     </CardDescription>
                     <div className="mt-auto pt-4">
                       <Button asChild className="w-full bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg">
-                        <Link href="/contact-sales">Talk to sales</Link>
+                        <Link href="/contact">Talk to sales</Link>
                       </Button>
                     </div>
                   </CardHeader>
@@ -455,7 +506,7 @@ export default function Home() {
                     </CardDescription>
                     <div className="mt-auto pt-4">
                       <Button asChild className="w-full bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg">
-                        <Link href="/sign-up?as=patient">Join the waitlist</Link>
+                        <a href="https://portal.sitanaglobal.com" target="_blank" rel="noopener noreferrer">Join the waitlist</a>
                       </Button>
                     </div>
                   </CardHeader>
@@ -468,86 +519,46 @@ export default function Home() {
         {/* For Doctors Section */}
         <section id="for-doctors" className="w-full py-16 md:py-24 bg-[#f8f9fa]">
           <div className="container px-4 md:px-8 mx-auto max-w-7xl">
-            <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
-              <div className="space-y-6">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#233161]/10 text-[#233161] text-sm font-medium">
-                  <Stethoscope className="h-4 w-4" />
-                  <span>For Healthcare Providers</span>
-                </div>
-                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-foreground">
-                  Dedicated Tools for Medical Professionals
+            <div className="flex flex-col items-center space-y-12">
+              <div className="space-y-4 text-center max-w-3xl">
+                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-foreground">
+                  For Doctors
                 </h2>
                 <p className="text-muted-foreground text-lg">
-                  Doctors and clinics benefit from comprehensive dashboards designed
-                  for medical compliance and auditability. Manage appointments, patient
-                  records, and documentation — all within a secure, privacy-focused
-                  framework.
+                  Tools and support that make clinical work faster, safer, and easier.
                 </p>
-                <ul className="space-y-4">
-                  <li className="flex items-start gap-3">
-                    <div className="flex items-center justify-center w-8 h-8 rounded-full bg-[#233161]/10 mt-0.5">
-                      <Clock className="w-4 h-4 text-[#233161]" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-foreground">Appointment Management</p>
-                      <p className="text-sm text-muted-foreground">
-                        Streamlined scheduling and patient queue management
-                      </p>
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="flex items-center justify-center w-8 h-8 rounded-full bg-[#233161]/10 mt-0.5">
-                      <Shield className="w-4 h-4 text-[#233161]" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-foreground">Compliance Framework</p>
-                      <p className="text-sm text-muted-foreground">
-                        Built-in medical compliance and audit trails
-                      </p>
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="flex items-center justify-center w-8 h-8 rounded-full bg-[#233161]/10 mt-0.5">
-                      <FileText className="w-4 h-4 text-[#233161]" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-foreground">Digital Documentation</p>
-                      <p className="text-sm text-muted-foreground">
-                        Easy-to-create clinic letters and medical records
-                      </p>
-                    </div>
-                  </li>
-                </ul>
-                <Button asChild size="lg" className="bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg">
-                  <Link href="/sign-up?as=doctor">Apply as a provider</Link>
-                </Button>
               </div>
-              <div className="grid gap-6">
-                <Card className="border-border">
-                  <CardHeader>
-                    <CardTitle className="text-foreground">Expand Your Practice</CardTitle>
-                    <CardDescription>
-                      Reach patients across borders and provide care beyond geographical
-                      limitations
+
+              <div className="w-full max-w-3xl">
+                <Card className="border-border hover:shadow-lg transition-shadow">
+                  <CardHeader className="space-y-4 p-8">
+                    <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#233161]/10">
+                      <Stethoscope className="w-6 h-6 text-[#233161]" />
+                    </div>
+                    <CardTitle className="text-2xl text-foreground">
+                      Doctor-to-doctor specialist consults
+                    </CardTitle>
+                    <CardDescription className="space-y-3 text-base">
+                      <ul className="space-y-3">
+                        <li className="flex items-start gap-3">
+                          <span className="text-[#233161] mt-1">•</span>
+                          <span><strong>Secure & de-identified</strong> — role-based portal; case packs auto-strip identifiers; full audit trail.</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <span className="text-[#233161] mt-1">•</span>
+                          <span><strong>Rapid</strong> — consult with the needed specialty; immediate guidance captured in the case.</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <span className="text-[#233161] mt-1">•</span>
+                          <span><strong>Scheduled</strong> — structured consults with a defined turnaround; a written plan returned to the primary doctor.</span>
+                        </li>
+                      </ul>
                     </CardDescription>
-                  </CardHeader>
-                </Card>
-                <Card className="border-border">
-                  <CardHeader>
-                    <CardTitle className="text-foreground">Secure Communication</CardTitle>
-                    <CardDescription>
-                      All patient interactions are encrypted and comply with international
-                      healthcare standards
-                    </CardDescription>
-                  </CardHeader>
-                </Card>
-                <Card className="border-border">
-                  <CardHeader>
-                    <CardTitle className="text-foreground">Professional Network</CardTitle>
-                    <CardDescription>
-                      Connect with other healthcare providers for consultations and second
-                      opinions
-                    </CardDescription>
+                    <div className="pt-4">
+                      <Button asChild className="w-full bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg">
+                        <a href="https://portal.sitanaglobal.com" target="_blank" rel="noopener noreferrer">Apply as a provider</a>
+                      </Button>
+                    </div>
                   </CardHeader>
                 </Card>
               </div>
@@ -570,10 +581,10 @@ export default function Home() {
               </div>
               <div className="flex flex-col gap-4 sm:flex-row sm:gap-4">
                 <Button asChild size="lg" className="bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg px-8">
-                  <Link href="/sign-up?as=patient">Join the waitlist</Link>
+                  <a href="https://portal.sitanaglobal.com" target="_blank" rel="noopener noreferrer">Join the waitlist</a>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="rounded-lg px-8 border-2">
-                  <Link href="/sign-up?as=doctor">Apply as a provider</Link>
+                  <a href="https://portal.sitanaglobal.com" target="_blank" rel="noopener noreferrer">Apply as a provider</a>
                 </Button>
               </div>
             </div>

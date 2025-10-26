@@ -66,9 +66,7 @@ export default function FeaturesPage() {
                     </div>
                     <CardTitle className="text-foreground">Multilingual Platform</CardTitle>
                     <CardDescription>
-                      Register and consult in your preferred language — English, Arabic,
-                      French, or Spanish. Live subtitles bridge language gaps during
-                      consultations, ensuring clear communication regardless of language barriers.
+                      Register and consult in English, العربية, Français. Live subtitles bridge language gaps.
                     </CardDescription>
                   </CardHeader>
                 </Card>
@@ -77,11 +75,9 @@ export default function FeaturesPage() {
                     <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#233161]/10 mb-3">
                       <Activity className="w-6 h-6 text-[#233161]" />
                     </div>
-                    <CardTitle className="text-foreground">Smart Triage System</CardTitle>
+                    <CardTitle className="text-foreground">Smart Triage (human-supervised)</CardTitle>
                     <CardDescription>
-                      Complete a short triage form and instantly know whether your case
-                      requires urgent care or can proceed to online consultation. Our AI-assisted
-                      system helps prioritize care based on medical urgency.
+                      AI assists and a clinician supervises to keep it safe and accurate.
                     </CardDescription>
                   </CardHeader>
                 </Card>
@@ -90,11 +86,9 @@ export default function FeaturesPage() {
                     <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#233161]/10 mb-3">
                       <Video className="w-6 h-6 text-[#233161]" />
                     </div>
-                    <CardTitle className="text-foreground">Secure Video Consultations</CardTitle>
+                    <CardTitle className="text-foreground">Secure Video Consultation & Full Medical Report</CardTitle>
                     <CardDescription>
-                      Book remote sessions with certified doctors. All communication
-                      remains private and encrypted throughout the consultation using
-                      enterprise-grade security protocols.
+                      Meet via encrypted video; receive a full medical report after each consultation.
                     </CardDescription>
                   </CardHeader>
                 </Card>
@@ -103,11 +97,10 @@ export default function FeaturesPage() {
                     <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#233161]/10 mb-3">
                       <FileText className="w-6 h-6 text-[#233161]" />
                     </div>
-                    <CardTitle className="text-foreground">Digital Clinic Letters</CardTitle>
+                    <CardTitle className="text-foreground">Full Medical Report</CardTitle>
                     <CardDescription>
-                      After each session, receive a comprehensive digital clinic letter,
-                      securely stored for your review and future reference. Share with
-                      other healthcare providers when needed.
+                      After each session, receive a comprehensive full medical report,
+                      securely stored for your review and future reference.
                     </CardDescription>
                   </CardHeader>
                 </Card>
@@ -131,9 +124,7 @@ export default function FeaturesPage() {
                     </div>
                     <CardTitle className="text-foreground">International Second Opinions</CardTitle>
                     <CardDescription>
-                      Get expert second opinions on de-identified medical data,
-                      protecting patient identity while ensuring quality review from
-                      specialists worldwide.
+                      Expert reviews on de-identified medical data from international specialists.
                     </CardDescription>
                   </CardHeader>
                 </Card>
@@ -252,10 +243,10 @@ export default function FeaturesPage() {
               </div>
               <div className="flex flex-col gap-4 sm:flex-row sm:gap-4">
                 <Button asChild size="lg" className="bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg px-8">
-                  <Link href="/sign-up?as=patient">Join the waitlist</Link>
+                  <a href="https://portal.sitanaglobal.com" target="_blank" rel="noopener noreferrer">Join the waitlist</a>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="rounded-lg px-8 border-2">
-                  <Link href="/sign-up?as=doctor">Apply as a provider</Link>
+                  <a href="https://portal.sitanaglobal.com" target="_blank" rel="noopener noreferrer">Apply as a provider</a>
                 </Button>
               </div>
             </div>

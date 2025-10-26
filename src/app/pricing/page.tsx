@@ -2,6 +2,7 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import {
   Card,
+  CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
@@ -47,18 +48,17 @@ export default function PricingPage() {
               <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 w-full max-w-6xl">
                 {/* Pay Per Visit */}
                 <Card className="border-border relative">
-                  <CardHeader className="p-8">
+                  <CardHeader>
                     <CardTitle className="text-2xl text-foreground">Pay Per Visit</CardTitle>
                     <CardDescription className="text-base">
                       Perfect for occasional consultations
                     </CardDescription>
-                    <div className="pt-6 pb-4">
-                      <div className="flex items-baseline">
-                        <span className="text-5xl font-bold text-foreground">$49</span>
-                        <span className="text-muted-foreground ml-2">/consultation</span>
-                      </div>
+                  </CardHeader>
+                  <CardContent className="flex flex-col flex-1">
+                    <div className="pb-4">
+                      <div className="h-16"></div>
                     </div>
-                    <ul className="space-y-3 pt-6">
+                    <ul className="space-y-3 flex-1">
                       <li className="flex items-start gap-3">
                         <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">30-minute video consultation</span>
@@ -84,12 +84,12 @@ export default function PricingPage() {
                         <span className="text-muted-foreground/60">Unlimited follow-ups</span>
                       </li>
                     </ul>
-                    <div className="pt-8">
+                    <div className="mt-auto pt-8">
                       <Button asChild className="w-full bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg">
-                        <Link href="/sign-up?as=patient&plan=per-visit">Join the waitlist</Link>
+                        <a href="https://portal.sitanaglobal.com" target="_blank" rel="noopener noreferrer">Join the waitlist</a>
                       </Button>
                     </div>
-                  </CardHeader>
+                  </CardContent>
                 </Card>
 
                 {/* Monthly Plan - Popular */}
@@ -97,18 +97,17 @@ export default function PricingPage() {
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#233161] text-white px-4 py-1 rounded-full text-sm font-semibold">
                     Most Popular
                   </div>
-                  <CardHeader className="p-8">
+                  <CardHeader>
                     <CardTitle className="text-2xl text-foreground">Monthly</CardTitle>
                     <CardDescription className="text-base">
                       Best value for regular healthcare needs
                     </CardDescription>
-                    <div className="pt-6 pb-4">
-                      <div className="flex items-baseline">
-                        <span className="text-5xl font-bold text-foreground">$99</span>
-                        <span className="text-muted-foreground ml-2">/month</span>
-                      </div>
+                  </CardHeader>
+                  <CardContent className="flex flex-col flex-1">
+                    <div className="pb-4">
+                      <div className="h-16"></div>
                     </div>
-                    <ul className="space-y-3 pt-6">
+                    <ul className="space-y-3 flex-1">
                       <li className="flex items-start gap-3">
                         <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">3 consultations per month</span>
@@ -138,32 +137,27 @@ export default function PricingPage() {
                         <span className="text-muted-foreground">24/7 support</span>
                       </li>
                     </ul>
-                    <div className="pt-8">
+                    <div className="mt-auto pt-8">
                       <Button asChild className="w-full bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg">
-                        <Link href="/sign-up?as=patient&plan=monthly">Join the waitlist</Link>
+                        <a href="https://portal.sitanaglobal.com" target="_blank" rel="noopener noreferrer">Join the waitlist</a>
                       </Button>
                     </div>
-                  </CardHeader>
+                  </CardContent>
                 </Card>
 
                 {/* Annual Plan */}
                 <Card className="border-border relative">
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#e9b95c] text-white px-4 py-1 rounded-full text-sm font-semibold">
-                    Save 20%
-                  </div>
-                  <CardHeader className="p-8">
+                  <CardHeader>
                     <CardTitle className="text-2xl text-foreground">Annual</CardTitle>
                     <CardDescription className="text-base">
                       Maximum savings for long-term care
                     </CardDescription>
-                    <div className="pt-6 pb-4">
-                      <div className="flex items-baseline">
-                        <span className="text-5xl font-bold text-foreground">$949</span>
-                        <span className="text-muted-foreground ml-2">/year</span>
-                      </div>
-                      <p className="text-sm text-[#233161] mt-2">Save $239 per year</p>
+                  </CardHeader>
+                  <CardContent className="flex flex-col flex-1">
+                    <div className="pb-4">
+                      <div className="h-16"></div>
                     </div>
-                    <ul className="space-y-3 pt-6">
+                    <ul className="space-y-3 flex-1">
                       <li className="flex items-start gap-3">
                         <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">36 consultations per year</span>
@@ -197,12 +191,12 @@ export default function PricingPage() {
                         <span className="text-muted-foreground">Annual health review</span>
                       </li>
                     </ul>
-                    <div className="pt-8">
+                    <div className="mt-auto pt-8">
                       <Button asChild className="w-full bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg">
-                        <Link href="/sign-up?as=patient&plan=annual">Join the waitlist</Link>
+                        <a href="https://portal.sitanaglobal.com" target="_blank" rel="noopener noreferrer">Join the waitlist</a>
                       </Button>
                     </div>
-                  </CardHeader>
+                  </CardContent>
                 </Card>
               </div>
             </div>
@@ -224,19 +218,17 @@ export default function PricingPage() {
               <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 w-full max-w-6xl">
                 {/* Starter */}
                 <Card className="border-border">
-                  <CardHeader className="p-8">
+                  <CardHeader>
                     <CardTitle className="text-2xl text-foreground">Starter</CardTitle>
                     <CardDescription className="text-base">
                       Perfect for individual practitioners
                     </CardDescription>
-                    <div className="pt-6 pb-4">
-                      <div className="flex items-baseline">
-                        <span className="text-5xl font-bold text-foreground">$199</span>
-                        <span className="text-muted-foreground ml-2">/month</span>
-                      </div>
-                      <p className="text-sm text-muted-foreground mt-2">15% commission on consultations</p>
+                  </CardHeader>
+                  <CardContent className="flex flex-col flex-1">
+                    <div className="pb-4">
+                      <div className="h-16"></div>
                     </div>
-                    <ul className="space-y-3 pt-6">
+                    <ul className="space-y-3 flex-1">
                       <li className="flex items-start gap-3">
                         <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">Up to 50 patients/month</span>
@@ -262,12 +254,12 @@ export default function PricingPage() {
                         <span className="text-muted-foreground/60">Multi-provider support</span>
                       </li>
                     </ul>
-                    <div className="pt-8">
+                    <div className="mt-auto pt-8">
                       <Button asChild className="w-full bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg">
-                        <Link href="/sign-up?as=doctor&plan=starter">Apply as a provider</Link>
+                        <a href="https://portal.sitanaglobal.com" target="_blank" rel="noopener noreferrer">Apply as a provider</a>
                       </Button>
                     </div>
-                  </CardHeader>
+                  </CardContent>
                 </Card>
 
                 {/* Professional */}
@@ -275,19 +267,17 @@ export default function PricingPage() {
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#233161] text-white px-4 py-1 rounded-full text-sm font-semibold">
                     Recommended
                   </div>
-                  <CardHeader className="p-8">
+                  <CardHeader>
                     <CardTitle className="text-2xl text-foreground">Professional</CardTitle>
                     <CardDescription className="text-base">
                       For growing medical practices
                     </CardDescription>
-                    <div className="pt-6 pb-4">
-                      <div className="flex items-baseline">
-                        <span className="text-5xl font-bold text-foreground">$399</span>
-                        <span className="text-muted-foreground ml-2">/month</span>
-                      </div>
-                      <p className="text-sm text-muted-foreground mt-2">10% commission on consultations</p>
+                  </CardHeader>
+                  <CardContent className="flex flex-col flex-1">
+                    <div className="pb-4">
+                      <div className="h-16"></div>
                     </div>
-                    <ul className="space-y-3 pt-6">
+                    <ul className="space-y-3 flex-1">
                       <li className="flex items-start gap-3">
                         <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">Up to 150 patients/month</span>
@@ -321,28 +311,27 @@ export default function PricingPage() {
                         <span className="text-muted-foreground">Priority support</span>
                       </li>
                     </ul>
-                    <div className="pt-8">
+                    <div className="mt-auto pt-8">
                       <Button asChild className="w-full bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg">
-                        <Link href="/sign-up?as=doctor&plan=professional">Apply as a provider</Link>
+                        <a href="https://portal.sitanaglobal.com" target="_blank" rel="noopener noreferrer">Apply as a provider</a>
                       </Button>
                     </div>
-                  </CardHeader>
+                  </CardContent>
                 </Card>
 
                 {/* Enterprise */}
                 <Card className="border-border">
-                  <CardHeader className="p-8">
+                  <CardHeader>
                     <CardTitle className="text-2xl text-foreground">Enterprise</CardTitle>
                     <CardDescription className="text-base">
                       For clinics and healthcare organizations
                     </CardDescription>
-                    <div className="pt-6 pb-4">
-                      <div className="flex items-baseline">
-                        <span className="text-4xl font-bold text-foreground">Custom</span>
-                      </div>
-                      <p className="text-sm text-muted-foreground mt-2">Custom commission rates</p>
+                  </CardHeader>
+                  <CardContent className="flex flex-col flex-1">
+                    <div className="pb-4">
+                      <div className="h-16"></div>
                     </div>
-                    <ul className="space-y-3 pt-6">
+                    <ul className="space-y-3 flex-1">
                       <li className="flex items-start gap-3">
                         <Check className="w-5 h-5 text-[#233161] mt-0.5 flex-shrink-0" />
                         <span className="text-muted-foreground">Unlimited patients</span>
@@ -376,71 +365,12 @@ export default function PricingPage() {
                         <span className="text-muted-foreground">SLA guarantee</span>
                       </li>
                     </ul>
-                    <div className="pt-8">
+                    <div className="mt-auto pt-8">
                       <Button asChild variant="outline" className="w-full rounded-lg border-2">
-                        <Link href="/contact-sales">Talk to sales</Link>
+                        <Link href="/contact">Talk to sales</Link>
                       </Button>
                     </div>
-                  </CardHeader>
-                </Card>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* FAQ Section */}
-        <section className="w-full py-16 md:py-24 bg-white">
-          <div className="container px-4 md:px-8 mx-auto max-w-4xl">
-            <div className="flex flex-col items-center space-y-12">
-              <div className="space-y-4 text-center max-w-3xl">
-                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-foreground">
-                  Frequently Asked Questions
-                </h2>
-              </div>
-              <div className="space-y-6 w-full">
-                <Card className="border-border">
-                  <CardHeader>
-                    <CardTitle className="text-lg text-foreground">
-                      Can I change my plan later?
-                    </CardTitle>
-                    <CardDescription className="text-base">
-                      Yes, you can upgrade or downgrade your plan at any time. Changes will be
-                      reflected in your next billing cycle.
-                    </CardDescription>
-                  </CardHeader>
-                </Card>
-                <Card className="border-border">
-                  <CardHeader>
-                    <CardTitle className="text-lg text-foreground">
-                      Are there any hidden fees?
-                    </CardTitle>
-                    <CardDescription className="text-base">
-                      No, we believe in transparent pricing. The prices shown include all
-                      standard features. Additional services may be available for an extra fee.
-                    </CardDescription>
-                  </CardHeader>
-                </Card>
-                <Card className="border-border">
-                  <CardHeader>
-                    <CardTitle className="text-lg text-foreground">
-                      Do you offer refunds?
-                    </CardTitle>
-                    <CardDescription className="text-base">
-                      We offer a 30-day money-back guarantee for subscription plans. Pay-per-visit
-                      consultations are non-refundable once the consultation is completed.
-                    </CardDescription>
-                  </CardHeader>
-                </Card>
-                <Card className="border-border">
-                  <CardHeader>
-                    <CardTitle className="text-lg text-foreground">
-                      What payment methods do you accept?
-                    </CardTitle>
-                    <CardDescription className="text-base">
-                      We accept all major credit cards, debit cards, and PayPal. For enterprise
-                      customers, we also offer invoice-based billing.
-                    </CardDescription>
-                  </CardHeader>
+                  </CardContent>
                 </Card>
               </div>
             </div>
@@ -461,10 +391,10 @@ export default function PricingPage() {
               </div>
               <div className="flex flex-col gap-4 sm:flex-row sm:gap-4">
                 <Button asChild size="lg" className="bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg px-8">
-                  <Link href="/sign-up?as=patient">Join the waitlist</Link>
+                  <a href="https://portal.sitanaglobal.com" target="_blank" rel="noopener noreferrer">Join the waitlist</a>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="rounded-lg px-8 border-2">
-                  <Link href="/sign-up?as=doctor">Apply as a provider</Link>
+                  <a href="https://portal.sitanaglobal.com" target="_blank" rel="noopener noreferrer">Apply as a provider</a>
                 </Button>
               </div>
             </div>

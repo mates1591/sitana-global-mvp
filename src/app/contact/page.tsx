@@ -1,3 +1,7 @@
+'use client';
+
+import { useState, FormEvent } from "react";
+import Link from "next/link";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import {
@@ -7,9 +11,57 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
+import { sendContactEmail } from "@/app/actions/send-email";
 
 export default function ContactPage() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: 'success' | 'error' | null;
+    message: string;
+  }>({ type: null, message: '' });
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus({ type: null, message: '' });
+
+    const formElement = e.currentTarget;
+    const formData = new FormData(formElement);
+
+    const firstName = formData.get('firstName') as string;
+    const lastName = formData.get('lastName') as string;
+    const email = formData.get('email') as string;
+    const phone = formData.get('phone') as string;
+    const subject = formData.get('subject') as string;
+    const message = formData.get('message') as string;
+
+    const result = await sendContactEmail({
+      name: `${firstName} ${lastName}`,
+      email,
+      phone,
+      subject,
+      message,
+    });
+
+    setIsSubmitting(false);
+
+    if (result.success) {
+      setSubmitStatus({
+        type: 'success',
+        message: result.message || 'Message sent successfully!',
+      });
+      formElement.reset();
+    } else {
+      setSubmitStatus({
+        type: 'error',
+        message: result.error || 'Failed to send message. Please try again.',
+      });
+    }
+
+    // Scroll to the message
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   return (
     <div className="flex flex-col min-h-screen bg-[#f8f9fa]">
       <Header />
@@ -35,6 +87,17 @@ export default function ContactPage() {
         {/* Contact Form and Info */}
         <section className="w-full py-16 md:py-24 bg-white">
           <div className="container px-4 md:px-8 mx-auto max-w-7xl">
+            {/* Status Message */}
+            {submitStatus.type && (
+              <div className={`mb-8 p-4 rounded-lg ${
+                submitStatus.type === 'success' 
+                  ? 'bg-green-50 border border-green-200 text-green-800' 
+                  : 'bg-red-50 border border-red-200 text-red-800'
+              }`}>
+                <p className="text-sm font-medium">{submitStatus.message}</p>
+              </div>
+            )}
+
             <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
               {/* Contact Form */}
               <div className="order-2 lg:order-1">
@@ -47,7 +110,7 @@ export default function ContactPage() {
                       Fill out the form below and our team will respond within 24 hours.
                     </p>
                   </div>
-                  <form className="space-y-6">
+                  <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid gap-6 sm:grid-cols-2">
                       <div className="space-y-2">
                         <label
@@ -165,9 +228,9 @@ export default function ContactPage() {
                         className="text-sm text-muted-foreground"
                       >
                         I agree to the{" "}
-                        <a href="#" className="text-[#233161] hover:underline">
+                        <Link href="/privacy" className="text-[#233161] hover:underline">
                           Privacy Policy
-                        </a>{" "}
+                        </Link>{" "}
                         and consent to being contacted by SITANA Global regarding my inquiry.{" "}
                         <span className="text-red-500">*</span>
                       </label>
@@ -175,9 +238,10 @@ export default function ContactPage() {
                     <Button
                       type="submit"
                       size="lg"
-                      className="w-full bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg"
+                      disabled={isSubmitting}
+                      className="w-full bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg disabled:opacity-50 disabled:cursor-not-allowed"
                     >
-                      Send Message
+                      {isSubmitting ? 'Sending...' : 'Send Message'}
                     </Button>
                   </form>
                 </div>
@@ -205,10 +269,10 @@ export default function ContactPage() {
                           <CardTitle className="text-lg text-foreground">Email</CardTitle>
                           <CardDescription className="text-base">
                             <a
-                              href="mailto:support@sitanaglobal.com"
+                              href="mailto:info@sitanaglobal.com"
                               className="text-[#233161] hover:underline"
                             >
-                              support@sitanaglobal.com
+                              info@sitanaglobal.com
                             </a>
                           </CardDescription>
                           <CardDescription className="text-sm">
@@ -229,14 +293,14 @@ export default function ContactPage() {
                           <CardTitle className="text-lg text-foreground">Phone</CardTitle>
                           <CardDescription className="text-base">
                             <a
-                              href="tel:+18005551234"
+                              href="tel:+97316555094"
                               className="text-[#233161] hover:underline"
                             >
-                              +1 (800) 555-1234
+                              +973 16555094
                             </a>
                           </CardDescription>
                           <CardDescription className="text-sm">
-                            Monday to Friday, 9AM - 6PM EST
+                            For general inquiries and support
                           </CardDescription>
                         </div>
                       </div>
@@ -250,80 +314,20 @@ export default function ContactPage() {
                           <MapPin className="w-6 h-6 text-[#233161]" />
                         </div>
                         <div className="space-y-1">
-                          <CardTitle className="text-lg text-foreground">Office</CardTitle>
+                          <CardTitle className="text-lg text-foreground">Address</CardTitle>
                           <CardDescription className="text-base">
-                            123 Healthcare Avenue
+                            Level 29 United Tower
                             <br />
-                            Suite 456
+                            Building 316, Road 4609
                             <br />
-                            New York, NY 10001
+                            Manama/Seafront
                             <br />
-                            United States
+                            Bahrain
                           </CardDescription>
                         </div>
                       </div>
                     </CardHeader>
                   </Card>
-
-                  <Card className="border-border">
-                    <CardHeader>
-                      <div className="flex items-start gap-4">
-                        <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#233161]/10 flex-shrink-0">
-                          <Clock className="w-6 h-6 text-[#233161]" />
-                        </div>
-                        <div className="space-y-1">
-                          <CardTitle className="text-lg text-foreground">Business Hours</CardTitle>
-                          <CardDescription className="text-base">
-                            <strong>Support:</strong> 24/7
-                            <br />
-                            <strong>Sales:</strong> Mon-Fri, 9AM - 6PM EST
-                            <br />
-                            <strong>Office:</strong> Mon-Fri, 9AM - 5PM EST
-                          </CardDescription>
-                        </div>
-                      </div>
-                    </CardHeader>
-                  </Card>
-                </div>
-
-                {/* Quick Links */}
-                <div className="pt-6">
-                  <h3 className="text-lg font-semibold text-foreground mb-4">
-                    Need Immediate Assistance?
-                  </h3>
-                  <div className="space-y-3">
-                    <a
-                      href="#"
-                      className="block p-4 rounded-lg border border-border hover:border-[#233161] hover:shadow-md transition-all"
-                    >
-                      <div className="font-semibold text-foreground">
-                        Patient Support Center
-                      </div>
-                      <div className="text-sm text-muted-foreground">
-                        Get help with appointments, medical records, and more
-                      </div>
-                    </a>
-                    <a
-                      href="#"
-                      className="block p-4 rounded-lg border border-border hover:border-[#233161] hover:shadow-md transition-all"
-                    >
-                      <div className="font-semibold text-foreground">
-                        Healthcare Provider Portal
-                      </div>
-                      <div className="text-sm text-muted-foreground">
-                        Access resources and support for medical professionals
-                      </div>
-                    </a>
-                    <a
-                      href="#"
-                      className="block p-4 rounded-lg border border-border hover:border-[#233161] hover:shadow-md transition-all"
-                    >
-                      <div className="font-semibold text-foreground">FAQ Center</div>
-                      <div className="text-sm text-muted-foreground">
-                        Find answers to commonly asked questions
-                      </div>
-                    </a>
-                  </div>
                 </div>
               </div>
             </div>
@@ -343,12 +347,12 @@ export default function ContactPage() {
                 </p>
               </div>
               <div className="flex flex-col gap-4 sm:flex-row sm:gap-4">
-                <Button asChild size="lg" className="bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg px-8">
-                  <a href="/sign-up?as=patient">Join the waitlist</a>
-                </Button>
-                <Button asChild size="lg" variant="outline" className="rounded-lg px-8 border-2">
-                  <a href="/sign-up?as=doctor">Apply as a provider</a>
-                </Button>
+                    <Button asChild size="lg" className="bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg px-8">
+                      <a href="https://portal.sitanaglobal.com" target="_blank" rel="noopener noreferrer">Join the waitlist</a>
+                    </Button>
+                    <Button asChild size="lg" variant="outline" className="rounded-lg px-8 border-2">
+                      <a href="https://portal.sitanaglobal.com" target="_blank" rel="noopener noreferrer">Apply as a provider</a>
+                    </Button>
               </div>
             </div>
           </div>

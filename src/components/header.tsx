@@ -35,12 +35,6 @@ export function Header() {
             About
           </Link>
           <Link
-            href="/pricing"
-            className="text-sm font-medium text-foreground hover:text-[#233161] transition-colors"
-          >
-            Pricing
-          </Link>
-          <Link
             href="/blog"
             className="text-sm font-medium text-foreground hover:text-[#233161] transition-colors"
           >
@@ -54,8 +48,10 @@ export function Header() {
           </Link>
         </nav>
         <div className="flex items-center gap-4">
-          <Button className="bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg">
-            Get a demo
+          <Button asChild className="bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg">
+            <a href="https://portal.sitanaglobal.com" target="_blank" rel="noopener noreferrer">
+              Get a demo
+            </a>
           </Button>
         </div>
       </div>
