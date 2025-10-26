@@ -20,7 +20,7 @@ export function Footer() {
             </p>
             <div className="flex items-center gap-4 pt-2">
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/company/sitanaglobal" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-[#233161] transition-colors"
@@ -29,7 +29,7 @@ export function Footer() {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a 
-                href="https://twitter.com" 
+                href="https://www.x.com/SitanaGlobal" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-[#233161] transition-colors"
@@ -45,7 +45,7 @@ export function Footer() {
                 </svg>
               </a>
               <a 
-                href="https://instagram.com" 
+                href="https://www.instagram.com/sitanaglobal/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-[#233161] transition-colors"

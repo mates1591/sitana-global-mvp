@@ -49,8 +49,8 @@ export function Header() {
         </nav>
         <div className="flex items-center gap-4">
           <Button asChild className="bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg">
-            <a href="https://portal.sitanaglobal.com" target="_blank" rel="noopener noreferrer">
-              Get a demo
+            <a href="https://portal.sitanaglobal.com">
+              Portal
             </a>
           </Button>
         </div>

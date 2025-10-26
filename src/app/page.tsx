@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -29,19 +30,34 @@ export default function Home() {
 
       {/* Hero Section */}
       <main className="flex-1">
-        <section className="relative w-full py-20 md:py-32 bg-[#f8f9fa]">
-          <div className="container px-4 md:px-8 mx-auto max-w-7xl">
+        <section className="relative w-full py-20 md:py-32 overflow-hidden min-h-[600px] flex items-center">
+          {/* Background Image */}
+          <div className="absolute inset-0">
+            <Image
+              src="/world-health.jpg"
+              alt="Global Healthcare Background"
+              fill
+              className="object-cover object-center"
+              priority
+              quality={90}
+              sizes="100vw"
+            />
+          </div>
+          {/* Darker Overlay for better text readability */}
+          <div className="absolute inset-0 bg-black/50"></div>
+          
+          <div className="container px-4 md:px-8 mx-auto max-w-7xl relative z-10">
             <div className="flex flex-col items-center space-y-10 text-center">
 
               {/* Hero Title */}
               <div className="space-y-6 max-w-4xl">
-                <h1 className="text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl text-foreground">
+                <h1 className="text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl text-white drop-shadow-lg">
                   Global expertise. Local care.
                 </h1>
-                <p className="text-2xl font-semibold text-foreground">
+                <p className="text-2xl font-semibold text-white drop-shadow-md">
                   Best healthcare, from anywhere.
                 </p>
-                <p className="mx-auto max-w-[700px] text-muted-foreground text-lg md:text-xl leading-relaxed">
+                <p className="mx-auto max-w-[700px] text-white/90 text-lg md:text-xl leading-relaxed drop-shadow-md">
                   A quick symptom check routes you to urgent, online, or local 
                   appointments—then you get a clear clinic letter. Second opinions 
                   when needed.
@@ -53,22 +69,14 @@ export default function Home() {
                 <Button 
                   asChild 
                   size="lg" 
-                  className="bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg px-8"
+                  className="bg-[#e9b95c] hover:bg-[#d4a54a] text-[#233161] font-semibold rounded-lg px-8 shadow-lg"
                 >
-                  <a href="https://portal.sitanaglobal.com" target="_blank" rel="noopener noreferrer">Get a demo</a>
-                </Button>
-                <Button 
-                  asChild 
-                  size="lg" 
-                  variant="outline" 
-                  className="rounded-lg px-8 border-2"
-                >
-                  <a href="https://portal.sitanaglobal.com" target="_blank" rel="noopener noreferrer">Join the waitlist</a>
+                  <a href="https://portal.sitanaglobal.com">Get Started</a>
                 </Button>
               </div>
 
               {/* Safety Note */}
-              <p className="text-sm text-muted-foreground max-w-md">
+              <p className="text-sm text-white/80 max-w-md drop-shadow">
                 Not for emergencies. Availability varies by country.
               </p>
             </div>
@@ -332,11 +340,6 @@ export default function Home() {
                         </li>
                       </ul>
                     </CardDescription>
-                    <div className="mt-auto pt-4">
-                      <Button asChild className="w-full bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg">
-                        <a href="https://portal.sitanaglobal.com" target="_blank" rel="noopener noreferrer">Request a demo</a>
-                      </Button>
-                    </div>
                   </CardHeader>
                 </Card>
 
@@ -372,11 +375,6 @@ export default function Home() {
                         </li>
                       </ul>
                     </CardDescription>
-                    <div className="mt-auto pt-4">
-                      <Button asChild className="w-full bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg">
-                        <a href="https://portal.sitanaglobal.com" target="_blank" rel="noopener noreferrer">Apply as a provider</a>
-                      </Button>
-                    </div>
                   </CardHeader>
                 </Card>
 
@@ -412,11 +410,6 @@ export default function Home() {
                         </li>
                       </ul>
                     </CardDescription>
-                    <div className="mt-auto pt-4">
-                      <Button asChild className="w-full bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg">
-                        <Link href="/contact">Talk to sales</Link>
-                      </Button>
-                    </div>
                   </CardHeader>
                 </Card>
               </div>
@@ -458,11 +451,6 @@ export default function Home() {
                         Language coverage: English, Arabic, French, Spanish.
                       </p>
                     </CardDescription>
-                    <div className="mt-auto pt-4">
-                      <Button asChild className="w-full bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg">
-                        <Link href="/contact">Book a benefits consult</Link>
-                      </Button>
-                    </div>
                   </CardHeader>
                 </Card>
 
@@ -502,11 +490,6 @@ export default function Home() {
                         </li>
                       </ul>
                     </CardDescription>
-                    <div className="mt-auto pt-4">
-                      <Button asChild className="w-full bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg">
-                        <a href="https://portal.sitanaglobal.com" target="_blank" rel="noopener noreferrer">Join the waitlist</a>
-                      </Button>
-                    </div>
                   </CardHeader>
                 </Card>
               </div>
@@ -552,11 +535,6 @@ export default function Home() {
                         </li>
                       </ul>
                     </CardDescription>
-                    <div className="pt-4">
-                      <Button asChild className="w-full bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg">
-                        <a href="https://portal.sitanaglobal.com" target="_blank" rel="noopener noreferrer">Apply as a provider</a>
-                      </Button>
-                    </div>
                   </CardHeader>
                 </Card>
               </div>
@@ -579,10 +557,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col gap-4 sm:flex-row sm:gap-4">
                 <Button asChild size="lg" className="bg-[#233161] hover:bg-[#1a2447] text-white rounded-lg px-8">
-                  <a href="https://portal.sitanaglobal.com" target="_blank" rel="noopener noreferrer">Join the waitlist</a>
-                </Button>
-                <Button asChild size="lg" variant="outline" className="rounded-lg px-8 border-2">
-                  <a href="https://portal.sitanaglobal.com" target="_blank" rel="noopener noreferrer">Apply as a provider</a>
+                  <a href="https://portal.sitanaglobal.com">Get Started Today</a>
                 </Button>
               </div>
             </div>
