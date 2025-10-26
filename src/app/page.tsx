@@ -9,7 +9,6 @@ import {
 import {
   Activity,
   Shield,
-  Clock,
   Users,
   Languages,
   FileText,
@@ -19,7 +18,6 @@ import {
   Building2,
   Briefcase,
   HeartPulse,
-  UserCircle,
 } from "lucide-react";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";

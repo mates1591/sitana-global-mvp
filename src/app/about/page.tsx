@@ -8,7 +8,6 @@ import {
 } from "@/components/ui/card";
 import { Globe, Heart, Shield, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
 export default function AboutPage() {
   return (

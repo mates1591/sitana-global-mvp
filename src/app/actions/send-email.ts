@@ -74,7 +74,7 @@ This email was sent from the SITANA Global contact form.
       success: true,
       message: 'Your message has been sent successfully. We will get back to you soon!',
     };
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error('SendGrid Error:', error);
 
     // Return a user-friendly error message
